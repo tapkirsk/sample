@@ -17,7 +17,7 @@
             <a href="#" class="home">Home</a>
             <div class="user-info">
                 <span class="welcome">Welcome: <span class="wallet-id">0x3c5de...975fd7f9</span></span>
-                <button class="go-back">Go Back</button>
+              
                 <button class="logout">Logout</button>
             </div>
         </nav>
@@ -26,8 +26,8 @@
     <!-- Main Content -->
     <main>
         <h2>Welcome To, <span class="highlight">Secure Blockchain Network</span></h2>
-        <div class="card">
-            <img src="patient.jpg" alt="Patient Information" class="card-image">
+        <div id="card" class="card">
+            <img id="img" src="patient.jpg" alt="Patient Information" class="card-image">
             <p class="card-text">PATIENT INFORMATION DASHBOARD</p>
         </div>
     </main>
@@ -36,5 +36,17 @@
     <footer>
         <p>&copy; 2024 - All Rights Reserved.</p>
     </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // Get the dashboard element
+    const dashboard = document.getElementById("img");
+
+    // Add the onclick event listener
+    dashboard.addEventListener("click", function() {
+        // Redirect to the dashboard page or perform any other action
+        window.location.href = "docdash.html"; // Replace with the actual target URL
+    });
+});
+</script>
 </body>
 </html>
